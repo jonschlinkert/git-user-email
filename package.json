@@ -21,13 +21,10 @@
     }
   ],
   "keywords": [
-    "docs",
-    "documentation",
-    "generate",
-    "generator",
-    "markdown",
-    "templates",
-    "verb"
+    "git",
+    "github",
+    "user",
+    "email"
   ],
   "main": "index.js",
   "engines": {
