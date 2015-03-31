@@ -1,8 +1,8 @@
 /*!
  * git-user-email <https://github.com/jonschlinkert/git-user-email>
  *
- * Copyright (c) 2014 Jon Schlinkert
- * Licensed under the MIT License (MIT)
+ * Copyright (c) 2014-2015, Jon Schlinkert.
+ * Licensed under the MIT License.
  */
 
 const shell = require('shelljs');
