@@ -1,7 +1,7 @@
 {
   "name": "git-user-email",
   "description": "Get the email address of the current user from git config.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/jonschlinkert/git-user-email",
   "author": {
     "name": "Jon Schlinkert",
@@ -34,14 +34,15 @@
     "parse-git-config": "^0.3.0",
     "shelljs": "~0.2.6"
   },
-  "keywords": [
-    "git",
-    "github",
-    "user",
-    "email"
-  ],
   "devDependencies": {
     "mocha": "*",
     "should": "*"
-  }
+  },
+  "keywords": [
+    "config",
+    "email",
+    "git",
+    "github",
+    "user"
+  ]
 }
