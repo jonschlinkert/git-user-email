@@ -5,8 +5,19 @@
  * Licensed under the MIT License.
  */
 
-const shell = require('shelljs');
+'use strict';
 
-module.exports = shell.exec('git config --get user.email', {
-  silent: true
-}).output.trim();
+var fs = require('fs');
+var path = require('path');
+var gitconfig = require('git-config-path');
+var parse = require('parse-git-config');
+var extend = require('extend-shallow');
+
+module.exports = function gitUserEmail(opts) {
+  opts = extend({cwd: '/', path: gitconfig}, opts);
+  var config = parse.sync(opts);
+  if (typeof config === 'object' && config.hasOwnProperty('user')) {
+    return config.user.email;
+  }
+  return null;
+};
