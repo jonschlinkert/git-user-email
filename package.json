@@ -1,7 +1,7 @@
 {
   "name": "git-user-email",
   "description": "Get the email address of the current user from git config.",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "homepage": "https://github.com/jonschlinkert/git-user-email",
   "author": {
     "name": "Jon Schlinkert",
