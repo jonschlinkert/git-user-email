@@ -5,7 +5,9 @@
   "homepage": "https://github.com/jonschlinkert/git-user-email",
   "author": {
     "name": "Jon Schlinkert",
-    "url": "http://github.com/https://github.com/jonschlinkert/"
+    "url": "http://github.com/https://github.com/jonschlinkert/",
+    "username": "jonschlinkert",
+    "twitter": "jonschlinkert"
   },
   "repository": {
     "type": "git",
@@ -34,6 +36,7 @@
     "parse-git-config": "^1.0.2"
   },
   "devDependencies": {
+    "gulp-format-md": "^0.1.11",
     "mocha": "*",
     "should": "*"
   },
@@ -43,5 +46,31 @@
     "git",
     "github",
     "user"
-  ]
+  ],
+  "verb": {
+    "toc": false,
+    "layout": "default",
+    "related": {
+      "list": [
+        "git-config-path",
+        "parse-git-config",
+        "git-username",
+        "git-repo-name",
+        "git-branch"
+      ]
+    },
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "lint": {
+      "reflinks": true
+    },
+    "reflinks": [
+      "verb",
+      "verb-generate-readme"
+    ]
+  }
 }
