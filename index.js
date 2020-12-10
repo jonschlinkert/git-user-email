@@ -16,7 +16,7 @@ var extend = require('extend-shallow');
 module.exports = function gitUserEmail(opts) {
   opts = extend({cwd: '/', path: gitconfig()}, opts);
   var config = parse.sync(opts);
-  if (typeof config === 'object' && config.hasOwnProperty('user')) {
+  if (typeof config === 'object' && Object.hasOwnProperty.bind(config)("user")) {
     return config.user.email;
   }
   return null;
